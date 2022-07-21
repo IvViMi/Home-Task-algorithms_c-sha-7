@@ -6,12 +6,11 @@ m = 3, n = 4.
 8 7,8 -7,1 9
 */
 Console.Clear();
-Console.WriteLine("Определите двумерный массив, m x n, со случайными вещественными числами");
-Console.Write("Введите m: ");
-int m = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите n: ");
-int n = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine($"m = {m}, n = {n}.");
+Console.WriteLine("Генерирование двумерного массива со случайными вещественными числами");
+Console.Write("Задайте кол-во строк: ");
+int m = Convert.ToInt32(Console.ReadLine( ));
+Console.Write("Задайте кол-во столбцов: ");
+int n = Convert.ToInt32(Console.ReadLine( ));
 double[,] array = new double[m, n];
 ArrayDouble(array);
 WriteArray(array);
@@ -27,7 +26,7 @@ void ArrayDouble(double[,] array)
   }
 }
 
-void WriteArray (double   [,]  array)
+void WriteArray (double [,] array)
 {
 for (int i = 0; i < m; i++)
   {
