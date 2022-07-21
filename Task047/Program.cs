@@ -6,7 +6,7 @@ m = 3, n = 4.
 8 7,8 -7,1 9
 */
 Console.Clear();
-Console.WriteLine("Генерирование двумерного массива со случайными вещественными числами");
+Console.WriteLine("Генерирование двумерного массива с вещественными числами");
 Console.Write("Задайте кол-во строк: ");
 int m = Convert.ToInt32(Console.ReadLine( ));
 Console.Write("Задайте кол-во столбцов: ");
